@@ -1,6 +1,23 @@
 .hero {
+  position: relative;
+  z-index: 5;
   background-color: var(--color-eastbay);
   height: 600px;
+
+  &__bg-text {
+    width: 100%;
+    justify-content: center;
+    z-index: -5;
+    padding-top: 150px;
+    margin: 0 auto;
+    position: absolute;
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 200px;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.12);
+  }
 
   &__container {
     padding: 100px 0;
@@ -27,9 +44,12 @@
   }
 
   &__btn {
+    z-index: 5;
     padding: 22px 47px;
     border-radius: 4px;
-    transition: background-color 0.6 s;
+    background-color: var(--accent-color);
+    color: var(--light-color);
+    transition: background-color 0.3s ease-out;
 
     &:hover {
       background-color: #cc4949;

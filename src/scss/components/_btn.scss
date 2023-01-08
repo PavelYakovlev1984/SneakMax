@@ -3,9 +3,5 @@
   margin: 0;
   border: none;
   background-color: transparent;
-  color: var(--light-color);
-
-  &--primary {
-    background-color: #f14f4f;
-  }
+  background-color: var(--accent-color);
 }
