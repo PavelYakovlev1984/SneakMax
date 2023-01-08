@@ -1,4 +1,38 @@
 .hero {
   background-color: var(--color-eastbay);
-  height: 40px;
+  height: 600px;
+
+  &__container {
+    padding: 100px 0;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    width: 50%;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 140%;
+    color: var(--light-color);
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 40px;
+    width: calc(50% - 100px);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--light-color);
+  }
+
+  &__btn {
+    padding: 22px 47px;
+    border-radius: 4px;
+    transition: background-color 0.6 s;
+
+    &:hover {
+      background-color: #cc4949;
+    }
+  }
 }
