@@ -1,0 +1,33 @@
+.catalog {
+  &__container {
+    display: grid;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    color: #444B58;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+  }
+
+  &__left {
+    grid-column: 3 span;
+  }
+
+  &__grid {
+    grid-column: 9 span;
+  }
+
+  &-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
