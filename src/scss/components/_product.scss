@@ -1,8 +1,11 @@
 .product {
   position: relative;
 
-  &__btn {
+  &__btns {
     position: absolute;
+  }
+
+  &__btn {
     left: 0;
     top: 0;
     margin: 0;
@@ -11,6 +14,10 @@
     border: none;
     background-color: #444B58;
     width: 80px;
+
+    &:first-child {
+      margin-right: 40px;
+    }
 
     svg {
       width: 100%;
