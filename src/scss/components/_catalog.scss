@@ -23,11 +23,19 @@
 
   &__grid {
     grid-column: 9 span;
+    margin-bottom: 20px;
   }
 
   &-list {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 20px;
+
+    &__item {
+      grid-column: 3 span;
+    }
   }
 }
