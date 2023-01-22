@@ -1,10 +1,13 @@
 .catalog {
+  padding: 60px;
+
   &__container {
     display: grid;
   }
 
   &__title {
     margin: 0;
+    margin-bottom: 40px;
     font-weight: 700;
     font-size: 30px;
     line-height: 30px;
@@ -18,7 +21,29 @@
   }
 
   &__left {
+    padding: 20px;
+    background-color: #fff4ee;
+    catalog-left: 4px;
     grid-column: 3 span;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #444b58;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  &__caption {
+    display: block;
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #444b58;
   }
 
   &__grid {
@@ -36,6 +61,32 @@
 
     &__item {
       grid-column: 3 span;
+    }
+  }
+}
+
+.catalog-price {
+  &__input {
+    background-color: #fff4ee;
+  }
+}
+
+.custom-checkbox {
+  padding-left: 32px;
+
+  &__field {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    border: none;
+  }
+
+  &__content {
+    &::before {
+      width: 24px;
+      height: 24px;
+      border: 1px solid #DBBBA9;
+      border-radius: 4px;
     }
   }
 }
