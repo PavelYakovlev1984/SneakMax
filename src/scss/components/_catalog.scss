@@ -66,8 +66,38 @@
 }
 
 .catalog-price {
+  &__wrapper {
+    display: flex;
+    position: relative;
+    border-bottom: #444B58;
+
+    &::before {
+      width: 1px;
+      position: absolute;
+      content: "";
+      background-color: #B2B5BB;
+      left: 50%;
+      height: 34px;
+      top: 8px;
+      bottom: 8px;
+    }
+  }
+
   &__input {
+    height: 50px;
     background-color: #fff4ee;
+    border: 1px solid #B2B5BB;
+    width: 50%;
+
+    &:first-child {
+      border-right: none;
+      border-top-left-radius: 4px;
+    }
+
+    &:last-child {
+      border-left: none;
+      border-top-right-radius: 4px;
+    }
   }
 }
 
