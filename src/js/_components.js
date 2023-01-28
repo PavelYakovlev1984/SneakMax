@@ -46,23 +46,17 @@ console.log(dept2AverageQuarter2);
 
 let printBonus = (dept1AverageQuarter1, dept2AverageQuarter1) => {
 
-  if (dept1AverageQuarter1 > dept2AverageQuarter1) {
+  if (dept1AverageQuarter1 > dept2AverageQuarter1 && dept1AverageQuarter1 >= 1.3 * dept2AverageQuarter1) {
     let diff = dept1AverageQuarter1 - dept2AverageQuarter1;
     let percent = (diff / dept2AverageQuarter1) * 100;
-    if(percent => 30){
-      console.log(`Dept 1 will get a bonus of ${percent}%`)
-    } else {
-      console.log('Dept 1 will not get a bonus in this quarter');
-    }
+      console.log(`Dept 1 will get a bonus of ${percent}%`);
   }
-  else if (dept1AverageQuarter1< dept2AverageQuarter1) {
+  else if (dept1AverageQuarter1 < dept2AverageQuarter1 && dept2AverageQuarter1 >= 1.3 * dept1AverageQuarter1) {
     let diff = dept2AverageQuarter1 - dept1AverageQuarter1;
     let percent = (diff / dept2AverageQuarter1) * 100;
-    if(percent => 30){
-      console.log(`Dept 1 will get a bonus of ${percent}%`)
-    } else {
-      console.log('Dept 1 will not get a bonus in this quarter');
-    }
+      console.log(`Dept 2 will get a bonus of ${percent}%`)
+  } else {
+      console.log('Dept 2 will not get a bonus in this quarter');
   }
 }
 printBonus(dept1AverageQuarter1, dept2AverageQuarter1);
