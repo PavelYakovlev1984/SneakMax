@@ -82,12 +82,23 @@ console.log('components');
 // let billTips = [eachTips[0]+testTips[0], eachTips[1]+testTips[1], eachTips[2]+testTips[2]];
 // console.log(eachTips, billTips);
 let youraObject = {
-   name: 'YouRa',
-   lastname: 'Allakhverdov',
-   birthYear: 1975,
+   name: 'Pavel',
+   lastname: 'Yakovlev',
+   birthYear: 1984,
    job: 'programming instructor',
-   familyMembers: ['Irina', 'Michael', 'YouRa']
+   familyMembers: ['Yulia', 'Alex', 'Pavel'],
+   hasDriverLicense: false,
+   calcAge: function() {
+    this.age = 2023 - this.birthYear;
+    return 2023 - this.birthYear;
+   },
+   getSummary: function() {
+    return `${this.name} is a ${this.calcAge()}-year oid ${this.job} and he has ${this.hasDriverLicense ? 'a' : 'no'} driver license`
+   }
 }
-console.log(`${youraObject.name} has ${youraObject.familyMembers.length} family members and the first one is ${youraObject.familyMembers[0]}`);
+console.log(youraObject.getSummary());
+//YouRa is a 47-year old programming instructor and he has a/no driver license
+
+// console.log(`${youraObject.name} has ${youraObject.familyMembers.length} family members and the first one is ${youraObject.familyMembers[0]}`);
 
 
