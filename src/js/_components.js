@@ -73,13 +73,21 @@ console.log('components');
 
 // Test data: 11, 20, 47.
 
-let tips = bill => bill < 20 ?  bill * 0.2 : bill * 0.15;
+// let tips = bill => bill < 20 ?  bill * 0.2 : bill * 0.15;
 
-let testTips = [11, 20, 47];
+// let testTips = [11, 20, 47];
 
-let eachTips = [tips(testTips[0]), tips(testTips[1]), tips(testTips[2])];
+// let eachTips = [tips(testTips[0]), tips(testTips[1]), tips(testTips[2])];
 
-let billTips = [eachTips[0]+testTips[0], eachTips[1]+testTips[1], eachTips[2]+testTips[2]];
-console.log(eachTips, billTips);
+// let billTips = [eachTips[0]+testTips[0], eachTips[1]+testTips[1], eachTips[2]+testTips[2]];
+// console.log(eachTips, billTips);
+let youraObject = {
+   name: 'YouRa',
+   lastname: 'Allakhverdov',
+   birthYear: 1975,
+   job: 'programming instructor',
+   familyMembers: ['Irina', 'Michael', 'YouRa']
+}
+console.log(`${youraObject.name} has ${youraObject.familyMembers.length} family members and the first one is ${youraObject.familyMembers[0]}`);
 
 
