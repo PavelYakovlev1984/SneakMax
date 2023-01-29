@@ -81,24 +81,54 @@ console.log('components');
 
 // let billTips = [eachTips[0]+testTips[0], eachTips[1]+testTips[1], eachTips[2]+testTips[2]];
 // console.log(eachTips, billTips);
-let youraObject = {
-   name: 'Pavel',
-   lastname: 'Yakovlev',
-   birthYear: 1984,
-   job: 'programming instructor',
-   familyMembers: ['Yulia', 'Alex', 'Pavel'],
-   hasDriverLicense: false,
-   calcAge: function() {
-    this.age = 2023 - this.birthYear;
-    return 2023 - this.birthYear;
-   },
-   getSummary: function() {
-    return `${this.name} is a ${this.calcAge()}-year oid ${this.job} and he has ${this.hasDriverLicense ? 'a' : 'no'} driver license`
-   }
-}
-console.log(youraObject.getSummary());
-//YouRa is a 47-year old programming instructor and he has a/no driver license
+// let youraObject = {
+//    name: 'Pavel',
+//    lastname: 'Yakovlev',
+//    birthYear: 1984,
+//    job: 'programming instructor',
+//    familyMembers: ['Yulia', 'Alex', 'Pavel'],
+//    hasDriverLicense: false,
+//    calcAge: function() {
+//     this.age = 2023 - this.birthYear;
+//     return 2023 - this.birthYear;
+//    },
+//    getSummary: function() {
+//     return `${this.name} is a ${this.calcAge()}-year oid ${this.job} and he has ${this.hasDriverLicense ? 'a' : 'no'} driver license`
+//    }
+// }
+// console.log(youraObject.getSummary());
 
 // console.log(`${youraObject.name} has ${youraObject.familyMembers.length} family members and the first one is ${youraObject.familyMembers[0]}`);
+
+let friendsJack = {
+  firstName: 'Jack',
+  lastName: 'White',
+  weight: 79,
+  height: 1.70,
+  calcBMI: function(){
+    this.BMI = this.weight / this.height ** 2;
+    return this.BMI;
+  }
+}
+let friendsMike = {
+  firstName: 'Mike',
+  lastName: 'Black',
+  weight: 91,
+  height: 1.93,
+  calcBMI: function(){
+    this.BMI = this.weight / this.height ** 2;
+    return this.BMI;
+  }
+}
+friendsJack.calcBMI();
+friendsMike.calcBMI();
+
+
+
+if(friendsJack.BMI > friendsMike.BMI) {
+  console.log(`${friendsJack.firstName} ${friendsJack.lastName} BMI (${friendsJack.calcBMI()}) is higher than Mike Black (${friendsMike.calcBMI()})!`);
+} else if(friendsMike.BMI > friendsJack.BMI) {
+  console.log(`${friendsMike.firstName} ${friendsMike.lastName} BMI (${friendsMike.calcBMI()}) is higher than Mike Black (${friendsMike.calcBMI()})!`);
+}
 
 
