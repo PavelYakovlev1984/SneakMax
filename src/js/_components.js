@@ -100,35 +100,42 @@ console.log('components');
 
 // console.log(`${youraObject.name} has ${youraObject.familyMembers.length} family members and the first one is ${youraObject.familyMembers[0]}`);
 
-let friendsJack = {
-  firstName: 'Jack',
-  lastName: 'White',
-  weight: 79,
-  height: 1.70,
-  calcBMI: function(){
-    this.BMI = this.weight / this.height ** 2;
-    return this.BMI;
-  }
-}
-let friendsMike = {
-  firstName: 'Mike',
-  lastName: 'Black',
-  weight: 91,
-  height: 1.93,
-  calcBMI: function(){
-    this.BMI = this.weight / this.height ** 2;
-    return this.BMI;
-  }
-}
-friendsJack.calcBMI();
-friendsMike.calcBMI();
+// let friendsJack = {
+//   firstName: 'Jack',
+//   lastName: 'White',
+//   weight: 79,
+//   height: 1.70,
+//   calcBMI: function(){
+//     this.BMI = this.weight / this.height ** 2;
+//     return this.BMI;
+//   }
+// }
+// let friendsMike = {
+//   firstName: 'Mike',
+//   lastName: 'Black',
+//   weight: 91,
+//   height: 1.93,
+//   calcBMI: function(){
+//     this.BMI = this.weight / this.height ** 2;
+//     return this.BMI;
+//   }
+// }
+// friendsJack.calcBMI();
+// friendsMike.calcBMI();
 
 
 
-if(friendsJack.BMI > friendsMike.BMI) {
-  console.log(`${friendsJack.firstName} ${friendsJack.lastName} BMI (${friendsJack.calcBMI()}) is higher than Mike Black (${friendsMike.calcBMI()})!`);
-} else if(friendsMike.BMI > friendsJack.BMI) {
-  console.log(`${friendsMike.firstName} ${friendsMike.lastName} BMI (${friendsMike.calcBMI()}) is higher than Mike Black (${friendsMike.calcBMI()})!`);
+// if(friendsJack.BMI > friendsMike.BMI) {
+//   console.log(`${friendsJack.firstName} ${friendsJack.lastName} BMI (${friendsJack.calcBMI()}) is higher than Mike Black (${friendsMike.calcBMI()})!`);
+// } else if(friendsMike.BMI > friendsJack.BMI) {
+//   console.log(`${friendsMike.firstName} ${friendsMike.lastName} BMI (${friendsMike.calcBMI()}) is higher than Mike Black (${friendsMike.calcBMI()})!`);
+// }
+
+let birthYears = [1974, 1994, 2000, 2003];
+let ages = [];
+for (let i = 0; i < birthYears.length; i++) {
+  ages.push(2023 - birthYears[i]);
 }
+console.log(ages);
 
 
