@@ -131,11 +131,11 @@ console.log('components');
 //   console.log(`${friendsMike.firstName} ${friendsMike.lastName} BMI (${friendsMike.calcBMI()}) is higher than Mike Black (${friendsMike.calcBMI()})!`);
 // }
 
-let birthYears = [1974, 1994, 2000, 2003];
-let ages = [];
-for (let i = 0; i < birthYears.length; i++) {
-  ages.push(2023 - birthYears[i]);
-}
+// let birthYears = [1974, 1994, 2000, 2003];
+// let ages = [];
+// for (let i = 0; i < birthYears.length; i++) {
+//   ages.push(2023 - birthYears[i]);
+// }
 console.log(ages);
 
 
